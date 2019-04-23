@@ -1,0 +1,7 @@
+<form [formGroup]="userForm">
+    <div class="form-line" *ngFor="let entry of formModel, let i = index">
+        <label [htmlFor]="entry">{{entry.label}}</label>
+      <input [type]="entry.type" [formControlName]="entry.key" [id]="entry.key"/>
+    </div>
+
+</form>
